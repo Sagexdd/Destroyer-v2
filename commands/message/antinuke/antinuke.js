@@ -39,7 +39,7 @@ module.exports = {
        client.db.set(`setup_${message.guild.id}`, true)
      client.db.set(`punish_${message.guild.id}`, `ban`)
      let ch = await message.guild.channels.create({
-	name: 'CodeX-logs',
+	name: 'Kranton-logs',
 	type: ChannelType.GuildText,
 	permissionOverwrites: [
 		{
