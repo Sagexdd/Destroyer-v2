@@ -10,7 +10,7 @@ module.exports = {
   usage: 'nuke [channel]',
   userPerms: ['ManageChannels'],
   botPerms: ['ManageChannels'],
-  owner: false,
+  owner: true,
 
   execute: async (client, message, args, prefix) => {
 
