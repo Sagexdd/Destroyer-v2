@@ -43,12 +43,12 @@ module.exports = {
       let e2 = new client.emb().setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL({dynamic: true})}).setThumbnail(client.user.displayAvatarURL()).setFooter({text: `Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL({dynamic: true})})    
       .addFields([{
         name: `<a:x_dot:1241064280124817529> Developers`,
-        value: `[1] - <:Dev:1242814114380644372>[ꇙᴛxʀᴢ](1341826040594432146) [ID : 1341826040594432146]`,
+        value: `[1] - <:Dev:1242814114380644372>[ꇙᴛxʀᴢ](1328025198758461440) [ID : 1328025198758461440]`,
         inline: false
       },
       {
         name: `<a:x_dot:1241064280124817529> Owners`,
-        value: `[1] - <:owner:1242814025423917118>[ꇙᴛxʀᴢ](1341826040594432146) [ID : 1341826040594432146]`,
+        value: `[1] - <:owner:1242814025423917118>[ꇙᴛxʀᴢ](1328025198758461440) [ID : 1328025198758461440]`,
 
         inline: false
       }
