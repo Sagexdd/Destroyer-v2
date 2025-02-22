@@ -56,7 +56,7 @@ users.push(`\`[${i+1}]\` | \`${user.username} [Id: ${user.id}]\``)
         .setFooter({text: `Page • 1/${pages.length}`})
         .setTimestamp()
       .setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()})
-      .setTitle(`CodeX No Prefix Users:`);
+      .setTitle(`Kranton No Prefix Users:`);
       pages.push(embed);
              
     }
