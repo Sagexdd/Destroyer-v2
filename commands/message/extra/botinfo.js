@@ -37,18 +37,19 @@ module.exports = {
       },
       {
         name: `Links`,
-        value: `[Invite](${client.invite}) | [Support](${client.support}) | [Website](https://pro)`
+        value: `[Invite](${client.invite}) | [Support](${client.support})`
       }])
       
       let e2 = new client.emb().setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL({dynamic: true})}).setThumbnail(client.user.displayAvatarURL()).setFooter({text: `Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL({dynamic: true})})    
       .addFields([{
         name: `<a:x_dot:1241064280124817529> Developers`,
-        value: `[1] - <:Dev:1242814114380644372>[Ray](https://discord.com/users/870179991462236170) [ID : 870179991462236170]`,
+        value: `[1] - <:Dev:1242814114380644372>[ꇙᴛxʀᴢ](1341826040594432146) [ID : 1341826040594432146]`,
         inline: false
       },
       {
         name: `<a:x_dot:1241064280124817529> Owners`,
-        value: `[1] - <:owner:1242814025423917118>[Ray](https://discord.com/users/870179991462236170) [ID : 870179991462236170]\n[2] - <:owner:1242814025423917118>[Nikhil](https://discord.com/users/1170659343750922274) [ID : 1170659343750922274]`,
+        value: `[1] - <:owner:1242814025423917118>[ꇙᴛxʀᴢ](1341826040594432146) [ID : 1341826040594432146]`,
+
         inline: false
       }
                  ])
