@@ -175,11 +175,11 @@ module.exports = {
       .setFooter({text: `Total Commands 142`})
     .setDescription(`\n\`${pfx}help <command>\` - Get help on a specific command.\n\`\`\`css\n<> - Required Argument\n[] - Optional Argument\`\`\``)
       .addFields([{
-        name: '<a:x_diamonds:1241429811256365096>__**Modules**__', value: `> ${client.emoji.antinuke} **[Antinuke](https://dsc.gg/codexdev)**\n> ${client.emoji.mod} **[Moderation](https://dsc.gg/codexdev)**\n> ${client.emoji.greet} **[Welcomer](https://dsc.gg/codexdev)**\n> ${client.emoji.vc} **[Voice](https://dsc.gg/codexdev)**\n> ${client.emoji.media} **[Media](https://dsc.gg/codexdev)**\n> ${client.emoji.utility} **[Extra](https://dsc.gg/codexdev)**`
+        name: '<a:x_diamonds:1241429811256365096>__**Modules**__', value: `> ${client.emoji.antinuke} **[Antinuke](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.mod} **[Moderation](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.greet} **[Welcomer](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.vc} **[Voice](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.media} **[Media](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.utility} **[Extra](https://discord.gg/tZcpYQJRMe)**`
                   },
                   {
                     name: `<a:link:1281620132875210863> __**Links**__`,
-                    value: `[Invite](${client.invite}) | [Support](${client.support}) | [Vote](${client.vote}) | [Website](https://dsc.gg/codexdev)`
+                    value: `[Invite](${client.invite}) | [Support](${client.support}) | [Vote](${client.vote})`
                   }
                  ])
     let help = await message.channel.send({ embeds: [em], components: [homedis, menu] })
