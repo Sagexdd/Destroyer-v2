@@ -109,7 +109,7 @@ class CodeX extends Client {
       this.user.setPresence({
         status: `dnd`,
         activities: [{
-          name: `Kranton`,
+          name: `RADHE KRISHNA`,
           type: ActivityType.Streaming,
           //url: 'https://www.twitch.tv/'
         }]
