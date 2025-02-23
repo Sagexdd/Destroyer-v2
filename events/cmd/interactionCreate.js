@@ -21,7 +21,7 @@ simplydjs.manageTicket(interaction, {
   embed: {
     title: "Ticket Created",
     description: `Welcome ${interaction.member.user.username}! The support will reach you shortly`,
-    footer: {text: `CodeX- Ticketing Without Clutter`, iconURL: interaction.member.user.displayAvatarURL({dynamic: true})},
+    footer: {text: `Kranton- Ticketing Without Clutter`, iconURL: interaction.member.user.displayAvatarURL({dynamic: true})},
     color: simplydjs.toRgb("#2f3136")
   },
   buttons: {
@@ -97,7 +97,7 @@ let nxten = new client.button().success(`enablenxt`, `Next`, client.emoji.arrow)
        client.db.set(`setup_${interaction.guild.id}`, true)
      client.db.set(`punish_${interaction.guild.id}`, `ban`)
      let ch = await interaction.guild.channels.create({
-	name: 'CodeX-logs',
+	name: 'Kranton-logs',
 	type: ChannelType.GuildText,
 	permissionOverwrites: [
 		{
@@ -112,9 +112,9 @@ let nxten = new client.button().success(`enablenxt`, `Next`, client.emoji.arrow)
 });
 
       client.db.set(`anlog_${interaction.guild.id}`, `${ch.id}`)
-      ch.send(`**This Channel Is Specifically Configured For CodeX's Antinuke Logs**`) 
+      ch.send(`**This Channel Is Specifically Configured For Kranton's Antinuke Logs**`) 
 
-     interaction.update({embeds: [new client.emb().setAuthor({name: user.username, iconURL: user.displayAvatarURL({dynamic: true})}).title(`CodeX Security`).desc(`**${client.emoji.tick} The antinuke setup has been completed.**\n\n*Move my role above for the antinuke to work properly*\n\nLogging Channel: ${ch}\nPunishment: Ban`).setTimestamp().setFooter({text: interaction.guild.name, iconURL: interaction.guild.iconURL({dynamic: true})})], components: []})
+     interaction.update({embeds: [new client.emb().setAuthor({name: user.username, iconURL: user.displayAvatarURL({dynamic: true})}).title(`Kranton Security`).desc(`**${client.emoji.tick} The antinuke setup has been completed.**\n\n*Move my role above for the antinuke to work properly*\n\nLogging Channel: ${ch}\nPunishment: Ban`).setTimestamp().setFooter({text: interaction.guild.name, iconURL: interaction.guild.iconURL({dynamic: true})})], components: []})
 
     /*    interaction.update({embeds: [new client.emb().setAuthor({name: user.username, iconURL: user.displayAvatarURL({dynamic: true})}).desc(`Server security has been enabled with:\n\n**${client.emoji.tick} • Anti Channel-Create\n${client.emoji.tick} • Anti Channel-Delete\n${client.emoji.tick} • Anti Role-Create\n${client.emoji.tick} • Anti Role-Delete\n${client.emoji.tick} • Anti Member Roles-Update\n${client.emoji.tick} • Anti Kick\n${client.emoji.tick} • Anti Ban\n${client.emoji.tick} • Anti Unban\n${client.emoji.tick} • Anti Bot-Add\n${client.emoji.tick} • Anti Server-Update\n${client.emoji.tick} • Anti Vanity-Update\n\n${client.emoji.tick} • Auto Recovery**`).setTimestamp().setFooter({text: interaction.guild.name, iconURL: interaction.guild.iconURL({dynamic: true})})], components: [enabledn]})*/
         
@@ -149,7 +149,7 @@ let nxten = new client.button().success(`enablenxt`, `Next`, client.emoji.arrow)
          let logsdn = new ActionRowBuilder().addComponents(crtdis, cstmdis)
 
               let ch = await interaction.guild.channels.create({
-	name: 'CodeX-logs',
+	name: 'Kranton-logs',
 	type: ChannelType.GuildText,
 	permissionOverwrites: [
 		{
