@@ -16,7 +16,7 @@ module.exports = {
   execute: async (client, message, args, prefix) => {
 
     if(!args[0]) {
-      message.channel.send({embeds: [new client.emb().addFields([{ name: `\`${prefix}antinuke\``, value:`\`${prefix}antinuke setup\`\nSetup the Server Security with Kranton Setup Wizard\n\n\`${prefix}antinuke enable\`\nForcefully enable security with default settings\n\n\`${prefix}antinuke disable\`\nDisable server security by Kranton\n\n\`${prefix}antinuke log <#channel>\`\nSet logging channel for antinuke`}]).setFooter({text: client.user.username + ` • Page 1/1`, iconURL: client.user.displayAvatarURL()})]})
+      message.channel.send({embeds: [new client.emb().addFields([{ name: `\`${prefix}antinuke\``, value:`\`${prefix}antinuke setup\`\nSetup the Server Security with Destroyer Setup Wizard\n\n\`${prefix}antinuke enable\`\nForcefully enable security with default settings\n\n\`${prefix}antinuke disable\`\nDisable server security by Destroyer\n\n\`${prefix}antinuke log <#channel>\`\nSet logging channel for antinuke`}]).setFooter({text: client.user.username + ` • Page 1/1`, iconURL: client.user.displayAvatarURL()})]})
     }
 
 
@@ -39,7 +39,7 @@ module.exports = {
        client.db.set(`setup_${message.guild.id}`, true)
      client.db.set(`punish_${message.guild.id}`, `ban`)
      let ch = await message.guild.channels.create({
-	name: 'Kranton-logs',
+	name: 'Destroyer-logs',
 	type: ChannelType.GuildText,
 	permissionOverwrites: [
 		{
@@ -54,8 +54,8 @@ module.exports = {
 });
 
       client.db.set(`anlog_${message.guild.id}`, `${ch.id}`)
-      ch.send(`**This Channel Is Specifically Configured For Kranton's Antinuke Logs**`)
-      return message.channel.send({embeds: [new client.emb().setAuthor({name: message.author.tag, iconURL: message.author.displayAvatarURL({dynamic: true})}).title(`Kranton Security`).desc(`**${client.emoji.tick} The antinuke setup has been completed.**\n\n*Move my role above for the antinuke to work properly*\n\nLogging Channel: ${ch}\nPunishment: Ban`).setTimestamp().setFooter({text: message.guild.name, iconURL: message.guild.iconURL({dynamic: true})})]})
+      ch.send(`**This Channel Is Specifically Configured For Destroyer's Antinuke Logs**`)
+      return message.channel.send({embeds: [new client.emb().setAuthor({name: message.author.tag, iconURL: message.author.displayAvatarURL({dynamic: true})}).title(`Destroyer Security`).desc(`**${client.emoji.tick} The antinuke setup has been completed.**\n\n*Move my role above for the antinuke to work properly*\n\nLogging Channel: ${ch}\nPunishment: Ban`).setTimestamp().setFooter({text: message.guild.name, iconURL: message.guild.iconURL({dynamic: true})})]})
       
     }
 
