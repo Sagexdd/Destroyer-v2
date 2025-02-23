@@ -50,19 +50,19 @@ client.on("channelDelete", async channel => {
                 let logch = await client.db.get(`anlog_${channel.guild.id}`) 
                 let ch = await channel.guild.channels.fetch(logch).catch(() => {})
                 if (!ch || ch === null) return;
-                let x = await channel.guild.members.kick(logs.executor.id, {reason: `CodeX Antinuke | Channel Deleted Not Whitelisted`}).catch(() => {})
+                let x = await channel.guild.members.kick(logs.executor.id, {reason: `Destroyer Antinuke | Channel Deleted Not Whitelisted`}).catch(() => {})
 
                 if (!x) {
 
-                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Kick Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
+                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Kick Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Destroyer Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
                   
                 } 
                 if(x) {
 
 
-                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Kicked From ${channel.guild.name}**\n${client.emoji.ham} **Reason:** Kranton Antinuke | Channel Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]}).catch(() => {})
+                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Kicked From ${channel.guild.name}**\n${client.emoji.ham} **Reason:** Destroyer Antinuke | Channel Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `Destroyer Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]}).catch(() => {})
 
-                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Kick Successful` : `${client.emoji.cross} Kick Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
+                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Kick Successful` : `${client.emoji.cross} Kick Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Destroyer Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
 
                   
                   
@@ -76,17 +76,17 @@ client.on("channelDelete", async channel => {
                 if (!ch || ch === null) return;
 
                 let mem = channel.guild.members.cache.get(logs.executor.id)
-                let x = await mem.timeout(dur, {reason: `Kranton Antinuke | Channel Deleted Not Whitelisted`}).catch(() => {})
+                let x = await mem.timeout(dur, {reason: `Destroyer Antinuke | Channel Deleted Not Whitelisted`}).catch(() => {})
 
                 if (!x) {
 
-                ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Mute Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
+                ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Mute Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Destroyer Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
                 }
                 if (x) {
 
-                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Muted in ${channel.guild.name}**\n${client.emoji.ham} **Reason:** Kranton Antinuke | Channel Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]}).catch(() => {})
+                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Muted in ${channel.guild.name}**\n${client.emoji.ham} **Reason:** Destroyer Antinuke | Channel Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]}).catch(() => {})
 
-                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Mute Successful` : `${client.emoji.cross} Mute Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
+                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Channel Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Mute Successful` : `${client.emoji.cross} Mute Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Destroyer Antinuke`, iconURL: channel.guild.iconURL({dynamic: true})})]})
                   
                 }                
               }
