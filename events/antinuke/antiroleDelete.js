@@ -32,19 +32,19 @@ client.on("roleDelete", async role => {
                 let logch = await client.db.get(`anlog_${role.guild.id}`) 
                 let ch = await role.guild.channels.fetch(logch).catch(() => {})
                 if (!ch || ch === null) return;
-                let x = await role.guild.members.ban(logs.executor.id, {reason: `CodeX Antinuke | Role Deleted Not Whitelisted`}).catch(() => {})
+                let x = await role.guild.members.ban(logs.executor.id, {reason: `Kranton Antinuke | Role Deleted Not Whitelisted`}).catch(() => {})
 
                 if (!x) {
                 
-                ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Ban Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
+                ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Ban Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
                 }
 
                 if (x) {
 
 
-                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Banned From ${role.guild.name}**\n${client.emoji.ham} **Reason:** CodeX Antinuke | Role Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]}).catch(() => {})
+                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Banned From ${role.guild.name}**\n${client.emoji.ham} **Reason:** Kranton Antinuke | Role Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]}).catch(() => {})
 
-                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Ban Successful` : `${client.emoji.cross} Ban Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
+                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Ban Successful` : `${client.emoji.cross} Ban Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
 
 
                   
@@ -54,19 +54,19 @@ client.on("roleDelete", async role => {
                 let logch = await client.db.get(`anlog_${role.guild.id}`) 
                 let ch = await role.guild.channels.fetch(logch).catch(() => {})
                 if (!ch || ch === null) return;
-                let x = await role.guild.members.kick(logs.executor.id, {reason: `CodeX Antinuke | Role Deleted Not Whitelisted`}).catch(() => {})
+                let x = await role.guild.members.kick(logs.executor.id, {reason: `Kranton Antinuke | Role Deleted Not Whitelisted`}).catch(() => {})
 
                 if (!x) {
 
-                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Kick Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
+                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Kick Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
                   
                 } 
                 if(x) {
 
 
-                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Kicked From ${role.guild.name}**\n${client.emoji.ham} **Reason:** CodeX Antinuke | Role Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]}).catch(() => {})
+                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Kicked From ${role.guild.name}**\n${client.emoji.ham} **Reason:** Kranton Antinuke | Role Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]}).catch(() => {})
 
-                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Kick Successful` : `${client.emoji.cross} Kick Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
+                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Kick Successful` : `${client.emoji.cross} Kick Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
 
                   
                   
@@ -80,17 +80,17 @@ client.on("roleDelete", async role => {
                 if (!ch || ch === null) return;
 
                 let mem = role.guild.members.cache.get(logs.executor.id)
-                let x = await mem.timeout(dur, {reason: `CodeX Antinuke | Role Deleted Not Whitelisted`}).catch(() => {})
+                let x = await mem.timeout(dur, {reason: `Kranton Antinuke | Role Deleted Not Whitelisted`}).catch(() => {})
 
                 if (!x) {
 
-                ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Mute Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
+                ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${client.emoji.cross} Mute Unsuccessful\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
                 }
                 if (x) {
 
-                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Muted in ${role.guild.name}**\n${client.emoji.ham} **Reason:** CodeX Antinuke | Role Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]}).catch(() => {})
+                  logs.executor.send({embeds: [ new client.emb().title(`Antinuke Triggered`).desc(`**You were Muted in ${role.guild.name}**\n${client.emoji.ham} **Reason:** Kranton Antinuke | Role Deleted Not Whitelisted\n${client.emoji.ham} **Moderator:** ${client.user.username}`).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]}).catch(() => {})
 
-                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Mute Successful` : `${client.emoji.cross} Mute Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `CodeX Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
+                  ch.send({embeds: [new client.emb().title(`Antinuke Result:`).desc(`**Trigger**: Role Deleted\n**Criminal**: ${logs.executor.tag}\n\n**Action Taken?**: ${x ? `${client.emoji.tick} Mute Successful` : `${client.emoji.cross} Mute Unsuccessful` }\n**Recovery**: ${del ? client.emoji.tick : client.smoji.cross}`).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL()}).setTimestamp().setFooter({text: `Kranton Antinuke`, iconURL: role.guild.iconURL({dynamic: true})})]})
                   
                 }                
               }
