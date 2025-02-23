@@ -7,7 +7,7 @@ module.exports = (client) => {
     aliases: ['dok', 'deb', "jsk"],
     prefix: '-',
     category: 'developer',
-    owners: ['1328025198758461440'],
+    owners: ['1269117003281731594'],
   });
 
   client.on('messageCreate', async (message) => {
