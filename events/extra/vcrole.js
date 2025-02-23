@@ -24,7 +24,7 @@ module.exports = (client) => {
       const role = newState.guild.roles.cache.find((r) => r.id === rid)
         
       if (role) {
-        member.roles.add(role, reason="CodeX Vcroles | Joined Vc")  
+        member.roles.add(role, reason="Kranton Vcroles | Joined Vc")  
       }
     })
         
@@ -45,7 +45,7 @@ module.exports = (client) => {
       vrb.forEach((rid) => {
       const role = newState.guild.roles.cache.find((r) => r.id === rid);
       if (role) {
-        member.roles.add(role, reason="CodeX Vcroles | Joined Vc")
+        member.roles.add(role, reason="Kranton Vcroles | Joined Vc")
       }
     });
     } 
@@ -71,7 +71,7 @@ module.exports = (client) => {
       const role = newState.guild.roles.cache.find((r) => r.id === rid)
         
       if (role) {
-        member.roles.remove(role, reason="CodeX Vcroles | Left Vc")  
+        member.roles.remove(role, reason="Kranton Vcroles | Left Vc")  
       }
     })
         
@@ -92,7 +92,7 @@ module.exports = (client) => {
       vrb.forEach((rid) => {
       const role = newState.guild.roles.cache.find((r) => r.id === rid);
       if (role) {
-        member.roles.remove(role, reason="CodeX Vcroles | Left Vc")
+        member.roles.remove(role, reason="Kranton Vcroles | Left Vc")
       }
     });
     } 
