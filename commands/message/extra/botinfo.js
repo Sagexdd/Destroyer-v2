@@ -30,7 +30,7 @@ module.exports = {
     let info = new ActionRowBuilder().addComponents(basic, team)
     
 
-    let e = new client.emb().setThumbnail(client.user.displayAvatarURL()).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL({dynamic: true})}).desc(`Meet me, **Kranton**, the all-encompassing bot designed to power up your server in style! With my lightning-fast responses, interactive games, and robust moderation tools, we ensure your community stays engaged, entertained, and safe.`).setFooter({text: `Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL({dynamic: true})}).addFields([
+    let e = new client.emb().setThumbnail(client.user.displayAvatarURL()).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL({dynamic: true})}).desc(`Meet me, **Destroyer**, the all-encompassing bot designed to power up your server in style! With my lightning-fast responses, interactive games, and robust moderation tools, we ensure your community stays engaged, entertained, and safe.`).setFooter({text: `Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL({dynamic: true})}).addFields([
       {
         name: `System Info`,
         value: `**Node Version**: ${process.version}\n**Library**: [discord.js](https://discord.js.org)`
@@ -43,12 +43,12 @@ module.exports = {
       let e2 = new client.emb().setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL({dynamic: true})}).setThumbnail(client.user.displayAvatarURL()).setFooter({text: `Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL({dynamic: true})})    
       .addFields([{
         name: `<a:x_dot:1241064280124817529> Developers`,
-        value: `[1] - <:Dev:1242814114380644372>[ꇙᴛxʀᴢ](1328025198758461440) [ID : 1328025198758461440]`,
+        value: `[1] - <:Dev:1242814114380644372>[YAMRAJ](1269117003281731594) [ID : 1269117003281731594]`,
         inline: false
       },
       {
         name: `<a:x_dot:1241064280124817529> Owners`,
-        value: `[1] - <:owner:1242814025423917118>[ꇙᴛxʀᴢ](1328025198758461440) [ID : 1328025198758461440]`,
+        value: `[1] - <:owner:1242814025423917118>[YAMRAJ](1269117003281731594) [ID : 1269117003281731594]`,
 
         inline: false
       }
