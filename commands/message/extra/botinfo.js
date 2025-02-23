@@ -30,7 +30,7 @@ module.exports = {
     let info = new ActionRowBuilder().addComponents(basic, team)
     
 
-    let e = new client.emb().setThumbnail(client.user.displayAvatarURL()).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL({dynamic: true})}).desc(`Meet me, **CodeX**, the all-encompassing bot designed to power up your server in style! With my lightning-fast responses, interactive games, and robust moderation tools, we ensure your community stays engaged, entertained, and safe.`).setFooter({text: `Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL({dynamic: true})}).addFields([
+    let e = new client.emb().setThumbnail(client.user.displayAvatarURL()).setAuthor({name: client.user.username, iconURL: client.user.displayAvatarURL({dynamic: true})}).desc(`Meet me, **Kranton**, the all-encompassing bot designed to power up your server in style! With my lightning-fast responses, interactive games, and robust moderation tools, we ensure your community stays engaged, entertained, and safe.`).setFooter({text: `Requested by ${message.author.username}`, iconURL: message.author.displayAvatarURL({dynamic: true})}).addFields([
       {
         name: `System Info`,
         value: `**Node Version**: ${process.version}\n**Library**: [discord.js](https://discord.js.org)`
