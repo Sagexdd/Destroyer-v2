@@ -175,7 +175,7 @@ module.exports = {
       .setFooter({text: `Total Commands 142`})
     .setDescription(`\n\`${pfx}help <command>\` - Get help on a specific command.\n\`\`\`css\n<> - Required Argument\n[] - Optional Argument\`\`\``)
       .addFields([{
-        name: '<a:x_diamonds:1241429811256365096>__**Modules**__', value: `> ${client.emoji.antinuke} **[Antinuke](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.mod} **[Moderation](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.greet} **[Welcomer](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.vc} **[Voice](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.media} **[Media](https://discord.gg/tZcpYQJRMe)**\n> ${client.emoji.utility} **[Extra](https://discord.gg/tZcpYQJRMe)**`
+        name: '<a:x_diamonds:1241429811256365096>__**Modules**__', value: `> ${client.emoji.antinuke} **[Antinuke](https://discord.gg/AX64fcmTaG)**\n> ${client.emoji.mod} **[Moderation](https://discord.gg/AX64fcmTaG)**\n> ${client.emoji.greet} **[Welcomer](https://discord.gg/AX64fcmTaG)**\n> ${client.emoji.vc} **[Voice](https://discord.gg/AX64fcmTaG)**\n> ${client.emoji.media} **[Media](https://discord.gg/AX64fcmTaG)**\n> ${client.emoji.utility} **[Extra](https://discord.gg/AX64fcmTaG)**`
                   },
                   {
                     name: `<a:link:1281620132875210863> __**Links**__`,
