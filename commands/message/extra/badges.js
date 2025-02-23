@@ -117,7 +117,7 @@ const data = await response.json();
 
 
 
-    return message.channel.send({embeds: [new client.emb().setAuthor({name: user.username + ' - Profile', iconURL: user.displayAvatarURL({dynamic: true})}).setFooter({text: `Requested By `+ message.author.username, iconURL: message.author.displayAvatarURL({dynamic: true})}).setThumbnail(message.author.displayAvatarURL({dynamic: true})).addFields([{name: `Badges [ ${count} ]`, value: ub.length > 1 ? ub : `<:f_:1160193052099497985> **CodeX Users**` }, {name: `Privilages`, value: prev.length > 1 ? prev : `**_N/A_**`}])], components: [new ActionRowBuilder().addComponents([new client.button().link(`Free Privilage`, client.vote)])]})
+    return message.channel.send({embeds: [new client.emb().setAuthor({name: user.username + ' - Profile', iconURL: user.displayAvatarURL({dynamic: true})}).setFooter({text: `Requested By `+ message.author.username, iconURL: message.author.displayAvatarURL({dynamic: true})}).setThumbnail(message.author.displayAvatarURL({dynamic: true})).addFields([{name: `Badges [ ${count} ]`, value: ub.length > 1 ? ub : `<:f_:1160193052099497985> **Destroyer Users**` }, {name: `Privilages`, value: prev.length > 1 ? prev : `**_N/A_**`}])], components: [new ActionRowBuilder().addComponents([new client.button().link(`Free Privilage`, client.vote)])]})
     
   }
 }
