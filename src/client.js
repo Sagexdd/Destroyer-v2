@@ -70,13 +70,13 @@ class CodeX extends Client {
     this.token = this.config.token;
     this.prefix = this.config.prefix;
     this.owners = this.config.owners;
-    this.web_cmd = "https://discord.com/api/webhooks/1281648413766582302/PeTn8tiimwpLfdx23H6rpo6f9HSKebBZClcvmsZ4-DmvaJgkp2E6kNVEZhRkLh4OJpfb";
-    this.web_err = "https://discord.com/api/webhooks/1281648413766582302/PeTn8tiimwpLfdx23H6rpo6f9HSKebBZClcvmsZ4-DmvaJgkp2E6kNVEZhRkLh4OJpfb.";
-    this.web_join = "https://discord.com/api/webhooks/1281648413766582302/PeTn8tiimwpLfdx23H6rpo6f9HSKebBZClcvmsZ4-DmvaJgkp2E6kNVEZhRkLh4OJpfb";
-    this.web_leave = "https://discord.com/api/webhooks/1281648413766582302/PeTn8tiimwpLfdx23H6rpo6f9HSKebBZClcvmsZ4-DmvaJgkp2E6kNVEZhRkLh4OJpfb";
-    this.web_np = "https://discord.com/api/webhooks/1281648413766582302/PeTn8tiimwpLfdx23H6rpo6f9HSKebBZClcvmsZ4-DmvaJgkp2E6kNVEZhRkLh4OJpfb";
-    this.web_bl = "https://discord.com/api/webhooks/1281648413766582302/PeTn8tiimwpLfdx23H6rpo6f9HSKebBZClcvmsZ4-DmvaJgkp2E6kNVEZhRkLh4OJpfb";
-    this.web_gban = "https://discord.com/api/webhooks/1281648413766582302/PeTn8tiimwpLfdx23H6rpo6f9HSKebBZClcvmsZ4-DmvaJgkp2E6kNVEZhRkLh4OJpfb";
+    this.web_cmd = "https://discord.com/api/webhooks/1342952761091952811/R_p9zs15KDpayTfCmpdLF3ymniVHzrCE4GPpWgQURIjhVFwBFXlrOZPRTMDnHnVCAKKr";
+    this.web_err = "https://discord.com/api/webhooks/1342952761091952811/R_p9zs15KDpayTfCmpdLF3ymniVHzrCE4GPpWgQURIjhVFwBFXlrOZPRTMDnHnVCAKKr.";
+    this.web_join = "https://discord.com/api/webhooks/1342952761091952811/R_p9zs15KDpayTfCmpdLF3ymniVHzrCE4GPpWgQURIjhVFwBFXlrOZPRTMDnHnVCAKKr";
+    this.web_leave = "https://discord.com/api/webhooks/1342952761091952811/R_p9zs15KDpayTfCmpdLF3ymniVHzrCE4GPpWgQURIjhVFwBFXlrOZPRTMDnHnVCAKKr";
+    this.web_np = "https://discord.com/api/webhooks/1342952761091952811/R_p9zs15KDpayTfCmpdLF3ymniVHzrCE4GPpWgQURIjhVFwBFXlrOZPRTMDnHnVCAKKr";
+    this.web_bl = "https://discord.com/api/webhooks/1342952761091952811/R_p9zs15KDpayTfCmpdLF3ymniVHzrCE4GPpWgQURIjhVFwBFXlrOZPRTMDnHnVCAKKr";
+    this.web_gban = "https://discord.com/api/webhooks/1342952761091952811/R_p9zs15KDpayTfCmpdLF3ymniVHzrCE4GPpWgQURIjhVFwBFXlrOZPRTMDnHnVCAKKr";
 
     this.color = this.config.embedColor;
     this.support = this.config.links.support;
@@ -109,8 +109,8 @@ class CodeX extends Client {
       this.user.setPresence({
         status: `dnd`,
         activities: [{
-          name: `-help`,
-          type: ActivityType.Watching,
+          name: `Kranton`,
+          type: ActivityType.Streaming,
           //url: 'https://www.twitch.tv/'
         }]
       });
@@ -160,4 +160,4 @@ class CodeX extends Client {
 
 module.exports = { CodeX };
 
-console.log(`Subcribe to Gamer CodeX`);
+console.log(`Subcribe to Gamer ꇙᴛxʀᴢ`);
