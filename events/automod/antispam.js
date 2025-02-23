@@ -33,7 +33,7 @@ module.exports = (client) => {
       await message.member.timeout(900000).then(() => {
           message.channel.send({embeds: [new client.emb().desc(`${client.emoji.tick} Muted ${message.author.tag} for attempting \`@everyone / @here\``).setAuthor({name: message.author.username, iconURL: message.author.displayAvatarURL({dynamic: true})})]})
         
-        ch.send({embeds: [new client.emb().desc(`**${client.emoji.warn} Member Muted**\n**Member**: ${message.author.tag}\n**Member Id**: ${message.author.id}\n\n**Reason**: Attempted \`@everyone / @here\``).setAuthor({name: `Automod Action`, iconURL: message.author.displayAvatarURL({dynamic: true})}).setFooter({text: `Kranton Automod`, iconURL: client.user.displayAvatarURL()}).setTimestamp()]}).catch(() => { })
+        ch.send({embeds: [new client.emb().desc(`**${client.emoji.warn} Member Muted**\n**Member**: ${message.author.tag}\n**Member Id**: ${message.author.id}\n\n**Reason**: Attempted \`@everyone / @here\``).setAuthor({name: `Automod Action`, iconURL: message.author.displayAvatarURL({dynamic: true})}).setFooter({text: `Destroyer Automod`, iconURL: client.user.displayAvatarURL()}).setTimestamp()]}).catch(() => { })
         
         }).catch((err) => {
         message.channel.send({embeds: [new client.emb().desc(`*Could not timeout ${message.author}*\n${err}`)]});
